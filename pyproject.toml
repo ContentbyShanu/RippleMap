@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ripplemap"
+version = "1.0.0"
+description = "Static change-impact analysis for Python repositories"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+ripplemap = "ripplemap.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ripplemap*"]
